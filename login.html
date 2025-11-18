@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Kaivora</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://i.pinimg.com/1200x/26/c5/41/26c5418768e4d0cd2cfaad1f5c5934d9.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 35px;
+      width: 350px;
+      border-radius: 12px;
+      text-align: center;
+      color: white;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    .logo {
+        color: skyblue;
+        padding: 60px;
+        width: 60px;
+        height: 50px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .login-btn {
+      background: #ffdd57;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background: #ffe580;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body style="background-image: url('https://i.pinimg.com/1200x/63/f5/c5/63f5c5f2aa2b40b04eaa64c58f32de71.jpg');">
+  <div class="login-box">
+    <div class="logo">
+      <img src="https://i.pinimg.com/1200x/09/67/33/096733968aed5289fad59ef4c59877d2.jpg" alt="Kaivora Logo">
+      <span>KAIVORA</span>
+  
+    </div>
+    <h2>Welcome Explorer</h2>
+    <input type="text" placeholder="Enter Username">
+    <input type="password" placeholder="Enter Password">
+    <button class="login-btn" onclick="window.location.href='index.html'">Login</button>
+
+    <a href="index.html" class="back-link">Back to Home</a>
+  </div>
+</body>
+</html>
