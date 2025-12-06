@@ -23,7 +23,13 @@
         <li><a href="#explore">Explore</a></li>
       </ul>
     </nav>
-    <a href="world.html" class="play-btn">Start Journey</a>
+    <a href="#" class="play-btn" onclick="startJourney()">Start Journey</a>
+    <script>
+    function startJourney() {
+    alert("Your adventure in Kaivora begins now!");
+    document.querySelector(".play-btn").innerText = "Loading...";
+  }
+  </script>
   </header>
 
   <section id="home" class="hero" style="background-image: url('https://i.pinimg.com/736x/b9/2b/05/b92b0582f7e639ec18caeba7340f3ef2.jpg');">
