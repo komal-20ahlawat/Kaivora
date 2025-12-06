@@ -43,7 +43,14 @@
     <div class="content">
       <h2>About Kaivora</h2>
       <p>Kaivora is a mystical realm where five elemental forces—Flame, Frost, Gale, Tide, and Radiance—balance the harmony of existence. Ancient guardians once protected this land, but chaos stirs once more. Your journey begins where destiny awakens.</p>
+      <p id="moreText" onclick="showMore()" style="cursor:pointer; font-weight:bold;">“Read Prophecy”</p>
     </div>
+    <script>
+  function showMore() {
+  more = document.getElementById("moreText");
+  more.innerText ="Kaivora awaits your courage—every choice shapes your destiny.";
+}
+</script>
   </section>
 
   <section id="world" class="world-section" style="background-image: url('https://i.pinimg.com/1200x/93/b8/d5/93b8d5b8a7ed80d77f6e39bfa9b111e0.jpg');">
