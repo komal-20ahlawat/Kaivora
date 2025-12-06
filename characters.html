@@ -34,7 +34,7 @@
   <section style="background-image: url('https://i.pinimg.com/originals/52/7b/41/527b41d9aeb4032d177bcb3b3ce8577a.jpg');">
     <div class="content">
       <div class="aerion-img">
-        <img src="https://i.pinimg.com/1200x/0f/ec/5e/0fec5e22bca4f0a8f261d4d1245951c7.jpg" alt="Aerion">
+        <img id="aerion" src="https://i.pinimg.com/1200x/0f/ec/5e/0fec5e22bca4f0a8f261d4d1245951c7.jpg" alt="Aerion">
       </div>
       <h2>Aerion – The Wind Seeker</h2>
       <p>Born under the Sky Crystal, Aerion commands the currents of wind with unmatched grace. His journey began among the mountain monks, where he mastered the ancient art of Skyblades.</p>
@@ -44,7 +44,7 @@
   <section style="background-image: url('https://i.pinimg.com/1200x/1d/4f/17/1d4f173dfb5dc541ad2e26f76b04d3b4.jpg');">
     <div class="content">
       <div class="lyria-img">
-        <img src="https://i.pinimg.com/1200x/52/da/99/52da995d056ae0ff74ad29bcef0ce552.jpg" alt="Lyria">
+        <img id="lyria" src="https://i.pinimg.com/1200x/52/da/99/52da995d056ae0ff74ad29bcef0ce552.jpg" alt="Lyria">
       </div>
       <h2>Lyria – Flame of Dawn</h2>
       <p>With a heart burning as bright as her crimson blade, Lyria protects the weak and restores hope to the lands scorched by chaos.</p>
@@ -56,5 +56,21 @@
     <p>Choose your path. Shape your destiny.</p>
     <div class="copy">© 2025 Kaivora Universe</div>
   </footer>
+  <script>
+  let aerionImg = document.getElementById('aerion');
+  aerionImg.addEventListener('mouseover', function() {
+    aerionImg.src = "https://w0.peakpx.com/wallpaper/769/211/HD-wallpaper-male-warrior-art-fantasy-warrior-man-weapon.jpg"; 
+  });
+  aerionImg.addEventListener('mouseout', function() {
+    aerionImg.src = 'https://i.pinimg.com/1200x/0f/ec/5e/0fec5e22bca4f0a8f261d4d1245951c7.jpg'; 
+  });
+  let lyriaImg = document.getElementById('lyria');
+  lyriaImg.addEventListener('mouseover', function() {
+    lyriaImg.src = "https://file.aiquickdraw.com/imgcompressed/img/compressed_66097a419209ef1f72bc0dded165c7c9.webp"; 
+  });
+  lyriaImg.addEventListener('mouseout', function() {
+    lyriaImg.src = 'https://i.pinimg.com/1200x/52/da/99/52da995d056ae0ff74ad29bcef0ce552.jpg'; 
+  });
+</script>
 </body>
 </html>

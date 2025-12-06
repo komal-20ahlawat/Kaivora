@@ -35,7 +35,7 @@
     <div class="content">
       <h2>Adventure Awaits</h2>
       <p>From crystal caves to sky temples — Kaivora is full of mysteries waiting to be explored. Every step brings new allies, new enemies, and new stories to uncover.</p>
-      <a href="#" class="btn-link">Start Your Journey</a>
+      <a href="#" class="btn-link" id="startBtn">Start Your Journey</a>
     </div>
   </section>
 
@@ -44,5 +44,11 @@
     <p>Step beyond the horizon. Your legend begins here.</p>
     <div class="copy">© 2025 Kaivora Universe</div>
   </footer>
+    <script>
+    var startBtn = document.getElementById('startBtn');
+    startBtn.addEventListener('click', function() {
+      alert('Your adventure begins!🥳');
+    });
+  </script>
 </body>
 </html>

@@ -12,7 +12,6 @@
       padding: 0;
       font-family: 'Poppins', sans-serif;
       background-image: url('https://i.pinimg.com/1200x/26/c5/41/26c5418768e4d0cd2cfaad1f5c5934d9.jpg');
-      background-size: cover;
       background-position: center;
       height: 100vh;
       display: flex;
@@ -21,7 +20,7 @@
     }
 
     .login-box {
-      background: rgba(0, 0, 0, 0.6);
+      background: black;
       padding: 35px;
       width: 350px;
       border-radius: 12px;
@@ -32,27 +31,39 @@
     .login-box h2 {
       margin-bottom: 20px;
       font-size: 28px;
-      letter-spacing: 2px;
     }
+
     .logo {
-        color: skyblue;
-        padding: 60px;
-        width: 60px;
-        height: 50px;
+      color: skyblue;
+      padding: 60px;
+      width: 60px;
+      height: 50px;
     }
 
     .login-box input {
       width: 100%;
       padding: 12px;
       margin: 10px 0;
-      border: none;
       border-radius: 8px;
-      outline: none;
+    }
+    .password-container {
+      position: relative;
+    }
+
+    .toggle-eye {
+      position: absolute;
+      right: 12px;
+      top: 15px;
+      cursor: pointer;
+      color: black;
+      background: white;
+      padding: 3px 6px;
+      border-radius: 5px;
+      font-size: 12px;
     }
 
     .login-btn {
       background: #ffdd57;
-      border: none;
       width: 100%;
       padding: 12px;
       margin-top: 10px;
@@ -60,19 +71,13 @@
       font-size: 16px;
       cursor: pointer;
       font-weight: bold;
-      transition: 0.3s ease;
+      text-decoration: none;
+      color: black;
+      display: inline-block;
     }
 
     .login-btn:hover {
       background: #ffe580;
-    }
-
-    .back-link {
-      display: block;
-      margin-top: 15px;
-      color: #fff;
-      text-decoration: underline;
-      font-size: 14px;
     }
   </style>
 </head>
@@ -82,14 +87,41 @@
     <div class="logo">
       <img src="https://i.pinimg.com/1200x/09/67/33/096733968aed5289fad59ef4c59877d2.jpg" alt="Kaivora Logo">
       <span>KAIVORA</span>
-  
     </div>
-    <h2>Welcome Explorer</h2>
-    <input type="text" placeholder="Enter Username">
-    <input type="password" placeholder="Enter Password">
-    <button class="login-btn" onclick="window.location.href='index.html'">Login</button>
 
-    <a href="index.html" class="back-link">Back to Home</a>
+    <h2>Welcome Explorer</h2>
+
+    <input id="username" type="text" placeholder="Enter Username">
+
+    <div class="password-container">
+      <input id="password" type="password" placeholder="Enter Password">
+      <span class="toggle-eye" onclick="togglePassword()">👁</span>
+    </div>
+     <a href="index.html" id="homeLink">Home</a>
+
+    <a href="#" onclick="validateLogin()" class="login-btn">Login</a>
   </div>
+`
+  <script>
+    function togglePassword() {
+      const pass = document.getElementById("password");
+       if (pass.type === "password") {
+        pass.type = "text";
+      } else {
+        pass.type = "password";
+      }
+    }
+    function validateLogin() {
+      let user = document.getElementById("username").value;
+      let pass = document.getElementById("password").value;
+
+      if (user === "" || pass === "") {
+        alert("Please enter both Username and Password!");
+      } else {
+        document.getElementById("homeLink").click();
+      }
+    }
+  </script>
+
 </body>
 </html>

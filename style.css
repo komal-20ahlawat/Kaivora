@@ -32,7 +32,7 @@ header {
 .logo img {
   height: 55px;
   width: auto;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .logo span {
@@ -283,7 +283,6 @@ footer .copy {
   }
 }
 
-/* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -320,10 +319,10 @@ section .content {
     position: relative;
 }
 
-/* Character Images */
+
 .aerion-img img,
 .lyria-img img {
-    width: 320px;   /* perfect size */
+    width: 320px;   
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
